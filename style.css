@@ -25,7 +25,7 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 .logo{  
     display: flex;
@@ -66,7 +66,7 @@ li a{
     gap: 0.7rem;
     border-radius: 5px;
     border: 1px solid var(--red);
-    padding: 0.8rem 1.8rem;
+    padding: 1.2rem 1.8rem;
     color: var(--white);
 }
 .nav_btn p{
@@ -79,16 +79,59 @@ color: white;
 
 
 /* <!-- *****************************Section2*************************** --> */
-.sliderContainer{
-    background-image: url('imgs/Hero\ Section.png');
-    background-position: center;
-    background-size: cover;
-    height: 70vh;
+
+.sect2{
+    padding: 6rem 0;
+    background: var(--bgcolor);
+    
+}
+.heroSection{
+    display: flex;
+    padding: 10rem 0 ;
+    justify-content: space-between;
     width: 100%;
+}
+.heroText{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.heroImg{
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    width: 40%;
+}
+.heroImg img{
+  object-fit: cover;
+}
+.heroText h1 {
+    color: var(--D-Gray);
+    font-size: 5.4rem;
+    font-weight: 700;
+    box-sizing: border-box;
+
+}
+.heroText p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color:var(--para);
+}
+.hero_btn p{
+    color: white;
+}
+.hero_btn{
+    background-color:  #E53835;
+    padding: 1.5rem 1.4rem;
+    border: 1px solid red;
+    border-radius:0.6rem;
+    font-size: 20rem; 
+    margin-top: 1.5rem;
 }
 /* <!-- *****************************Section3*************************** --> */
 .section3{
-    padding: 4rem 0;
+    padding: 6rem 0;
     /* border: 3px solid rebeccapurple; */
 }
 .OurClients{
@@ -129,6 +172,7 @@ color: white;
         align-items: center;
         object-fit: cover;
     }
+
     /* <!-- *****************************Section4*************************** --> */
     
     .subHeading2{
@@ -155,13 +199,13 @@ color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
+    justify-content: space-between;
 }
 .cardbox{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-top: 2rem;
 }
 .card{
     display: flex;
@@ -173,46 +217,25 @@ color: white;
     gap: 1rem;
     border-radius: 1rem; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    width: 333px;
 }
 .card img{
     width: 7rem;
 }
 .card h1{
-    width: 25rem;
     color: var(--D-Gray);
     font-size: 3rem;
     font-weight: 700;
 }
 .card p{
-    width: 20rem;
     color: var(--para);
     font-size: 2rem;
     font-weight: 400;
 }
-/* 
-@media (max-width: 320px) { 
-    nav,.links,ul,.logoGroup {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .subHeading h1, .subHeading2 h1 {
-        justify-content: center; 
-        font-size: 2rem;
-    }
-    .subHeading p {
-        font-size: 1.42rem;
-        font-weight: 400;
-    }
-    .OurClients {
-        gap: 1rem;
-    }
- } */
-
 /* <!-- *****************************Section5************************** --> */
 .section5{
     margin: 5rem 0;
     display: flex;
-    /* border: 1rem dotted red; */
     padding: 2rem 0;
 }
 .section5img{
@@ -251,6 +274,8 @@ color: white;
     font-size: 2rem; 
     margin-top: 1.5rem;
 }
+
+
 /* <!-- *****************************Section6************************** --> */
 .section6{
     background-color:var(--bgcolor) ;
@@ -306,6 +331,7 @@ color: white;
     display: flex;
     gap: 8rem;
 }
+ 
 /* <!-- *****************************Section7************************** --> */
 
 /* Same as a section 5  */
@@ -314,44 +340,47 @@ color: white;
 /* <!-- *****************************Section8************************** --> */
 .section8{
     background-color:var(--bgcolor) ;
-    padding: 9rem 0;
+    padding: 1rem 0;
 }
 .sec8Start{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+.sec8LeftSide {
+    width: 30%;
+    /* border: 2px solid rebeccapurple; */
 }
 .sec8RightSide{
     display: flex;
     flex-direction: column;
-    width: 68%;
+    width: 70%;
     gap: 1.6rem;
+    /* border: 2px solid rgb(179, 173, 185); */
+    padding: 6rem;
+
 }
 .sec8RightSidepera p,.headpara p{
     font-size: 2rem;
     font-weight: 400;
     color:var(--para);
+    /* color:blue; */
 }
 .headpara{
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
 }
 .headpara h1{
-    color: var(--red);
-    
+    color: var(--red);   
 }
-/* .sec8icon{
-    display: flex;
-    border: 2px solid gainsboro;
-    justify-content: space-between;
-} */
-
 .logoGroup2{
     display: flex;
     justify-content: space-between; 
     width: 100%;
     padding: 1rem;
+    white-space: nowrap;
 }
 .lasticon{
     display: flex;
@@ -392,20 +421,21 @@ color: white;
 .fa-arrow-right{
     color: var(--red);
 }
-
+.parentofmydiv{
+    display: flex;
+    /* width: 100%; */
+    gap: 3rem;
+    
+}
 .mydivforrealative{
     position: relative;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 .mydivforrealative > img{
     width: 100%;
     
 }
-.parentofmydiv{
-    display: flex;
-    width: 100%;
-    gap: 3rem;
-}
+
 .myabs{
     position: absolute;
     width: 90%;
@@ -441,7 +471,7 @@ color: white;
     background-color: var(--bgcolor);
 }
 .Pellentesque{
-    padding: 6rem 0;
+    padding: 6rem 21.2rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -454,7 +484,6 @@ color: white;
     font-size: 5.4rem;
     font-weight: 700;
     align-items: center;
-    width: 70rem;   
 }
 
 .pell_btn{
@@ -512,16 +541,7 @@ color: white;
     justify-content: center;
     display: flex;
 }
-.footer2{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-.footer2 h1{
-    color: var(--white);
-    font-size: 3rem;
-    font-weight: 600;
-}
+
 .footerPera{
     display: flex;
     flex-direction: column;
@@ -532,46 +552,284 @@ color: white;
     font-weight: 400;
     color: var(--footertext);
 }
-.inputDetail input{
+.inputDetail {
+    display: flex;
+    position: relative;
+}
+
+.inputDetail i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.inputDetail input {
     color: white;
-    background-color:wheat   ;
+    background-color: var(--para);
     border-radius: 1rem;
-    padding:17px 13px;
+    padding: 17px 50px 17px 13px;
     width: 100%;
     border: none;
     outline: none;
 }
 
+.inputDetail input::placeholder {
+    color: var(--footertext);
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer2 h1 {
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 600;
+}
 .footerleft{
-    width: 30%;
+    width: 40%;
 }
 .footerRight{
-    width: 50%;
+    width: 60%;
     display: flex;
-    justify-content: space-between
+    justify-content: center;
+    gap: 6rem;
 }
-.inputIcon i{
-    color: var(--white);
-    font-size: 1.6rem;
-}
-.inputIcon{
-    position: absolute;
-}
+
 
 
 
 /* ***************CSS Responsive**************** */
-/* // Small devices (landscape phones, 576px and up) */
+  @media (max-width: 767px){ 
+    .logo h1{
+        font-size: 2.5rem;
+    }
+    .heroText h1{
+        font-size: 2.4rem;
+        padding-right: 0 !important;
+    }
+    .heroImg {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+    }
+    nav, .links, ul, .logoGroup, .manage , .cardbox, .sec6Start, .sec8Start,
+     .logoGroup2, .footerRight{
+        flex-wrap: wrap;
+        justify-content: center;   
+    }
+     .Pellentesque h1{
+        justify-content: center; 
+        font-size: 2.5rem !important;
+    }
+    .subHeading h1, .subHeading2 h1, .subHeading3 h1, .sec6LeftSide h1, .Pellentesque h1{
+        justify-content: center; 
+        font-size: 2.5rem;
+    }
+    .section5, .firsrow, .secondrow, .parentofmydiv, .footer{
+        flex-direction: column;
+    }
+    .subHeading p, .subHeading2 p, .sec6LeftSide p, .sec9Start p, .footer1 p{
+        font-size: 1.42rem;
+    }
+    .OurClients,.cardbox,.sec6Start, .firsrow, .secondrow {
+        gap: 1rem;
+    }
+    .sec8Start{
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+    .subHeading2 h1, .sec6LeftSide h1,.section5img{
+        width: auto;
+    }
+    .card{
+        padding: 1rem 0;
+    }
+    .section5img img{
+        width: 20rem;
+        height: 20rem;
+    }
+    .section5,.footer{
+        align-items: center;
+        text-align: center;
+    }
+    .Pellentesque {
+        padding: 6rem 0.2rem;
+    }
+   .parentofmydiv{
+    gap: 6rem;
+   }
+   .sec9Start p, .sec8RightSide,.sec8LeftSide,.section5Text{
+    width:auto;
+   }
+   .footer1 p{
+    width: auto;
+    color: var(--footertext);
+    font-size: 1.6rem;
+ }
+.sec8RightSide {
+    padding: 0rem;
+}
+    nav{
+        gap: 1rem;
+    }
+    .nav_btn{
+        padding: 1rem;
+    }
+    .card h1 {
+        font-size: 2.3rem;
+    }
+    .card p {
+        font-size: 1.7rem;
+    }
+    .heroSection {
+        gap: 2rem;
+        align-items: center;
+    }
+    .socialmedia{
+        justify-content: center;
+    }
+ }  
+ @media (max-width: 991px){ 
+     nav{
+        padding: 1rem 0;
+        justify-content: center;
+    }
+    .sect2 {
+        padding: 4rem 0;
+    }
+    .nav_btn {
+        padding:1rem;
+    }
+    /*.heroText h1 {  
+        font-size: 5rem;
+        padding-right: 10rem;
+    }
+    .heroText p {
+        font-size: 1.5rem;
+    }
+    .subHeading h1, .subHeading2 h1,.sec6LeftSide h1,.subHeading3 h1,.sec9Start h1{
+        font-size: 3.7rem;
+    }
+    .subHeading p, .card p, .subHeading3 p,.sec6LeftSide p,.firstRowb2_text p, .sec9Start p,.sec8RightSidepera p, .headpara p {
+        font-size: 1.6rem;
+    } */
+    .Pellentesque h1{
+    font-size: 5rem;
+    }
+    .pell_btn{
+        padding: 1.3rem 1rem;
+    }
+    .OurClients{
+        gap: 1rem;
+    }
+    .subHeading2 p {
+        font-size: 1.6rem;
+        line-height: normal;
+    }
+    .section6 {
+        padding: 5rem 0;
+    }
+    .sec6LeftSide{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem
+    }
+    .btn_sec5{
+        padding: 1rem .8rem;
+    }
 
+    .cardbox{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    .section5, .sec8Start, .footer{
+        flex-direction: column;
+    }
+    .sec6Start, nav, .footerRight{
+        flex-wrap: wrap;
+    }
+    .nav_btn{
+        white-space: nowrap;
+    }
+    .cardbox, .sec6Start{
+        justify-content: center;
+    }
+    .section5, .footer{
+        align-items: center;
+        text-align: center;
+        justify-content: center;;
+    }
+    .sec6Start{
+        text-align: center;
+    }
+    .parentofmydiv {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6rem;
 
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  }
+    }
+    .sec6Start, .footer  {
+        gap: 3rem;
+    }
+    .section5img img{
+        width: 20rem;
+        height: 26rem;
+    }
+    .sec8RightSide, .section5Text, .footerleft{
+        width: auto;
+    }
+    .sec8RightSide {
+        padding: 0rem;
+    }
+    .sec8Start{
+        padding-top: 5rem;
+    }
+  
+   .card{
+    width: 293px;
+   }
+   .card h1,.firstRowb2_text h1, .sec9Start h1,.footer2 h1 {
+    font-size: 2.5rem;
+   }
+   .heroSection{    
+    flex-direction: column;
+    padding: 1rem 0;
+    gap: 3rem;
+    align-items: center;
+}
+    .heroText{
+       width: 100%;
 
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {  }
+   }
+   .Pellentesque{
+   padding: 5rem 0.2rem;
+}
 
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
-
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {  }
+.footerRight{
+    width: auto;
+    gap: 3rem;
+}
+ }
+ @media (max-width: 1024px){
+    li a{
+        font-size: 1.75rem;;
+    }
+    .card{
+        width: 26.5rem;
+    }
+    .Pellentesque {
+        padding: 6rem 4.2rem;
+ }
+}
+@media (max-width:1260){
+.cardbox{
+    background-color: cadetblue;
+}
+}
